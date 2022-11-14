@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>inicio</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header><h1>Ley de gravitacion Universal</h1></header>
+	<p>
+		La ley de gravitación universal es una ley física clásica
+que describe la fuerza o interacción gravitatoria entre
+distintos cuerpos con masa, fue formulada por Isaac
+Newton en su libro Philosophiae Naturalis Principia
+Mathematica, publicado el 5 de julio de 1687, donde
+establece por primera vez una relación proporcional
+(deducida empíricamente de la observación) de la fuerza
+con que se atraen dos objetos con masa. Así, Newton
+dedujo que la fuerza con que se atraen dos cuerpos tenía
+que ser proporcional al producto de sus masas dividido
+por la distancia entre ellos al cuadrado. Para grandes
+distancias de separación entre cuerpos se observa que
+dicha fuerza actúa de manera muy aproximada como si
+toda la masa de cada uno de los cuerpos estuviese
+concentrada únicamente en su centro de gravedad, es
+decir, es como si dichos objetos fuesen únicamente un
+punto, lo cual permite reducir enormemente la complejidad
+de las interacciones entre cuerpos complejos.
+Así, con todo esto resulta que la ley de la gravitación
+universal predice que la fuerza ejercida entre dos cuerpos de masas y separados una distancia es
+igual al producto de sus masas e inversamente proporcional al cuadrado de la distancia.
+	</p>
+<img src="imagenes/imagen1.png" width="300px">
+<p>
+	<h3>Por Ejemplo</h3>
+</p>
+<img src="imagenes/imagen2.jpg" width="600px">
+<h2>Respuesta al Problema</h2>
+	<br><br><br>
+	<center>
+		<button id="btn">Calcular</button>
+	</center>
+	<br><br><br>
+	<h2>Resultado del Calculo:</h2>
+	<div id="resultado1"></div>
+	<div id="resultado2"></div>
+	<script>
+		var b=document.getElementById('btn');
+		b.addEventListener('click',fgravedad);
+		var a=parseFloat(document.getElementById('numeroA').value);
+		function fgravedad() 
+		{
+			var g1=6.67*(10**(-11))
+			var m1=5.98*(10**98)
+			var m2=2.0*(10**30)
+			var f1=g1*((m1*m2)/((149.6*(10**9))**2))
+			var m22=7.36*(10**22)
+			var f12=g1*((m1*m22)/((384.4*(10**6))**2))
+			document.getElementById("resultado1").innerHTML = "gravedad Tierra-Sol= "+f1
+			document.getElementById("resultado2").innerHTML = "gravedad Tierra-Luna= "+f12
+		}
+	</script>
+</body>
+</html>

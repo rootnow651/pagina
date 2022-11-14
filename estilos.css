@@ -1,0 +1,12 @@
+h1 {
+	text-align: center;
+	color: blue;
+}
+img {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+body {
+	background-color: #c6c0f8;
+}
